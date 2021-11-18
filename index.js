@@ -6,7 +6,6 @@ function dirReduc(arr){
     let arrLengthBeforeLooping=arr.length+1;
     
     while (arr.length!=arrLengthBeforeLooping) {
-  
     arrLengthBeforeLooping=arr.length;
     for(let i=0;i<arr.length;i++){
         if(arr[i]==="NORTH"&&arr[i+1]==="SOUTH"){
@@ -33,10 +32,10 @@ function dirReduc(arr){
     } 
    
 }
-
+document.querySelector("#result").textContent=`The result is:${arr}`;
  return arr
 
 }
 
-let arrayToPass=[ 'NORTH','NORTH','SOUTH','NORTH','NORTH','NORTH','NORTH','NORTH','NORTH','NORTH','NORTH' ]
+let arrayToPass=["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"];
 dirReduc(arrayToPass);
